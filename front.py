@@ -13,7 +13,7 @@ from backnd import Video_summarizer
 import time
 import threading
 
-print("start")
+print("Application started")
 
 
 class SplashScreen(QSplashScreen):
@@ -131,8 +131,6 @@ class VideoUploadWindow(QWidget):
 
             self.loading_page(self.file_path)
             
-
-            print("me first")
 
     def loading_page(self,video_path):
         self.summarizer_obj = Video_summarizer(video_path=video_path)
